@@ -1,0 +1,14 @@
+#anim {
+  background:red;
+  width: 200px;
+  height: 200px;
+}
+#anim.enable {
+   animation:
+    flash 1s ease infinite;
+}
+@keyframes flash {
+  50% {
+    opacity:0;
+  }
+}
