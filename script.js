@@ -1,6 +1,6 @@
-let anim = document.querySelector("#anim");
-anim.addEventListener('click', startAnimation);
+let saule = document.querySelector("#sun");
+saule.addEventListener('click', sunset);
 
-function startAnimation(){
-    anim.classList.add('enable');
+function sunset(){
+    saule.classList.add('click');
 }

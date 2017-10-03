@@ -1,14 +1,23 @@
-#anim {
-  background:red;
+#sun {
+  background:yellow;
   width: 200px;
   height: 200px;
+border-radius: 50%;
 }
-.enable {
+ div:nth-of-type(2){
+        width:1000px;
+        height: 200px;
+        margin-top: 300px;
+        background: blue;
+    }
+.click{
    animation:
-    flash 1s ease infinite;
+    sunset 1s ease-in forwards;
 }
-@keyframes flash {
-  50% {
-    opacity:0;
-  }
+@keyframes sunset {
+    to{
+        transform: translateY(45vw);
+    }
+
+
 }
