@@ -1,4 +1,5 @@
 let bilde = document.querySelector("img.powerpuffpicture");
+let otrabilde = document.querySelector("img.mojojojo");
 
 let shakeButton = document.querySelector("#shake");
 shakeButton.addEventListener('click',startshaking);
@@ -63,4 +64,19 @@ talkButton.addEventListener('click',starttalking);
 function starttalking(){
     console.log("starttalking");
     bilde.classList.add('talkCSS');
+}
+
+let hitButton = document.querySelector("#hit");
+hitButton.addEventListener('click', hither);
+function hither(){
+    console.log("hither");
+    otrabilde.classList.add('hitCSS');
+
+}
+
+let reactButton = document.querySelector("#react");
+reactButton.addEventListener('click', startreacting);
+function startreacting(){
+    console.log("react");
+    bilde.classList.add('reactCSS');
 }

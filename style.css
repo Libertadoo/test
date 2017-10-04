@@ -4,6 +4,9 @@
 .powerpuffpicture{
     margin-top: 100px;
 }
+.mojojojo{
+    margin-left: 700px;
+}
 button{
     color: black;
      text-align: center;
@@ -44,6 +47,32 @@ button{
             transform: rotate(-100deg);
     transform-origin: 100% 100%;
 
+    }
+}
+
+/*HIT*/
+
+.hitCSS{
+    animation: hitkey 1s ease-in forwards;
+}
+@keyframes hitkey{
+    to{
+        transform: rotate(-45deg);
+        transform-origin: left;
+        transform-origin: -60% 250%;
+    }
+}
+
+/*REACT*/
+
+.reactCSS{
+    animation: reactkey .2s ease-out forwards;
+}
+@keyframes reactkey{
+    to{
+        transform: rotate(-35deg);
+        transform-origin: right;
+        transform-origin: -5% 5%;
     }
 }
 
