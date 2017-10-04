@@ -50,3 +50,17 @@ function startfadinginandout(){
     console.log("startfadinginandout");
     bilde.classList.toggle('fadeCSS');
 }
+
+let falldownButton = document.querySelector("#falldown");
+falldownButton.addEventListener('click',startfallingdown);
+function startfallingdown(){
+    console.log("startfallingdown");
+    bilde.classList.toggle('falldownCSS');
+}
+
+let talkButton = document.querySelector("#talk");
+talkButton.addEventListener('click',starttalking);
+function starttalking(){
+    console.log("starttalking");
+    bilde.classList.add('talkCSS');
+}
