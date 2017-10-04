@@ -1,23 +1,116 @@
-#sun {
-  background:yellow;
-  width: 200px;
-  height: 200px;
-border-radius: 50%;
+*:not(img){
+    background-image: url(background.jpg);
 }
- div:nth-of-type(2){
-        width:1000px;
-        height: 200px;
-        margin-top: 300px;
-        background: blue;
+img{
+    margin-top: 100px;
+}
+button{
+    color: black;
+     text-align: center;
+    font-size: 26px;
+    background-color: black;
+    border-color: black;
+    border-radius: 6px;
+    margin-right: 2px;
+}
+
+/*SHAKE*/
+
+.shakeCSS{
+    animation: shakekey 0.1s 4;
+}
+@keyframes shakekey{
+    25%{
+        transform: translateX(9px);
     }
-.click{
-   animation:
-    sunset 1s ease-in forwards;
+    75%{
+        transform: translateX(-9px);
+    }
 }
-@keyframes sunset {
-    to{
-        transform: translateY(45vw);
+
+/*MOVE*/
+
+.moveCSS{
+    animation: movekey 1s infinite;
+}
+@keyframes movekey{
+    0%{
+        transform: translateX(-10vw)
+    }
+    100%{
+        transform: translateX(110vw);
+    }
+}
+
+/*MOVE30*/
+
+.move30CSS{
+    animation: move30key 1s ease-out forwards;
+}
+@keyframes move30key{
+    0%{
+        transform: translateX(-10vw);
+    }
+    100%{
+        transform: translateX(30vw);
+    }
+}
+
+/*MOVE FROM 30*/
+
+.movefrom30CSS{
+    animation: movefrom30key 1s ease-in forwards;
+}
+@keyframes movefrom30key{
+    0%{
+        transform: translateX(30vw);
+    }
+    100%{
+        transform: translateX(110vw);
+    }
+}
+
+/*JUMP*/
+
+.jumpCSS{
+    animation: jumpkey 2s ease-out;
+}
+
+@keyframes jumpkey{
+    20%{
+        transform: translateY(-120px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/*JUMPING*/
+
+.jumpingCSS{
+    animation: jumpingkey 1s ease-out infinite;
+}
+@keyframes jumpingkey{
+    20%{
+        transform: translateY(-120px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 
+/*FADE IN AND OUT*/
 
+.fadeCSS {
+    animation: fade 2s linear infinite;
+}
+
+
+@keyframes fade{
+  0%,
+100%{
+    opacity: 0;
+    }
+  50%{
+      opacity: 1;
+    }
 }
